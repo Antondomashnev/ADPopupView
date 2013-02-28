@@ -18,6 +18,7 @@
 		6DEFFE3D16DCE8AF00EC564E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DEFFE3C16DCE8AF00EC564E /* Default-568h@2x.png */; };
 		6DEFFE4016DCE8B000EC564E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEFFE3F16DCE8B000EC564E /* ViewController.m */; };
 		6DEFFE4316DCE8B000EC564E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DEFFE4116DCE8B000EC564E /* ViewController.xib */; };
+		6DEFFE4C16DCE94100EC564E /* ADPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEFFE4B16DCE94100EC564E /* ADPopupView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		6DEFFE3E16DCE8AF00EC564E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6DEFFE3F16DCE8B000EC564E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DEFFE4216DCE8B000EC564E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6DEFFE4A16DCE94100EC564E /* ADPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPopupView.h; sourceTree = "<group>"; };
+		6DEFFE4B16DCE94100EC564E /* ADPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPopupView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		6DEFFE2C16DCE8AE00EC564E /* ADPopupView */ = {
 			isa = PBXGroup;
 			children = (
+				6DEFFE4916DCE92B00EC564E /* Source */,
 				6DEFFE3516DCE8AF00EC564E /* AppDelegate.h */,
 				6DEFFE3616DCE8AF00EC564E /* AppDelegate.m */,
 				6DEFFE3E16DCE8AF00EC564E /* ViewController.h */,
@@ -105,6 +109,15 @@
 				6DEFFE3C16DCE8AF00EC564E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DEFFE4916DCE92B00EC564E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6DEFFE4A16DCE94100EC564E /* ADPopupView.h */,
+				6DEFFE4B16DCE94100EC564E /* ADPopupView.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +189,7 @@
 				6DEFFE3316DCE8AF00EC564E /* main.m in Sources */,
 				6DEFFE3716DCE8AF00EC564E /* AppDelegate.m in Sources */,
 				6DEFFE4016DCE8B000EC564E /* ViewController.m in Sources */,
+				6DEFFE4C16DCE94100EC564E /* ADPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
