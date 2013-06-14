@@ -62,7 +62,7 @@
 
 - (void)presentPopupAtPointWithContentViewAtPoint:(CGPoint)point{
     
-    [self.visiblePopup hide: YES];
+    //[self.visiblePopup hide: YES];
     
     if(arc4random_uniform(2)){
         
