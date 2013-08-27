@@ -42,4 +42,9 @@
 */
 @property (nonatomic, strong) UIColor *messageLabelTextColor;
 
+/*
+ Background color
+ */
+@property (nonatomic, strong) UIColor *popupColor;
+
 @end

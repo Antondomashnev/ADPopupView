@@ -41,6 +41,7 @@ typedef enum {
 @synthesize messageLabelTextColor;
 @synthesize messageLabelFont;
 @synthesize message;
+@synthesize popupColor=_popupColor;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -157,6 +158,13 @@ typedef enum {
     self.messageLabel.textColor = _messageLabelTextColor;
 }
 
+#pragma mark - PopupColor
+
+- (UIColor *)popupColor {
+    if (!_popupColor) return [UIColor blackColor];
+    return _popupColor;
+}
+
 #pragma mark PopupFrame
 
 - (CGSize)popupSizeForContentView:(UIView *)contentView {
@@ -258,7 +266,7 @@ typedef enum {
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-    [[UIColor blackColor] set];
+    [self.popupColor set];
 
     switch (self.type) {
         case ptDownLeft: {

@@ -64,7 +64,8 @@
 
     if (arc4random_uniform(2)) {
 
-        self.visiblePopup = [[ADPopupView alloc] initAtPoint:point delegate:self withMessage:@"ADPopupView is very useful view to show some text or whatever UIVIew content"];
+        self.visiblePopup = [[ADPopupView alloc] initAtPoint:point delegate:self withMessage:@"ADPopupView is very useful view to show some text or whatever UIView content"];
+        self.visiblePopup.popupColor = [UIColor darkGrayColor];
 
         [self.visiblePopup showInView:self.view animated:YES];
     }
