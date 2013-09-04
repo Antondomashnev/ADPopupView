@@ -10,7 +10,7 @@
 
 @class ADPopupView;
 
-@protocol ADPopupViewDelegate <NSObject>
+@protocol ADPopupViewDelegate<NSObject>
 
 @optional
 - (void)ADPopupViewDidTap:(ADPopupView *)popup;
@@ -20,9 +20,11 @@
 @interface ADPopupView : UIView
 
 - (id)initAtPoint:(CGPoint)point delegate:(id<ADPopupViewDelegate>)theDelegate withMessage:(NSString *)theMessage;
+
 - (id)initAtPoint:(CGPoint)point delegate:(id<ADPopupViewDelegate>)theDelegate withContentView:(UIView *)contentView;
 
 - (void)hide:(BOOL)animated;
+
 - (void)showInView:(UIView *)view animated:(BOOL)animated;
 
 /*
@@ -39,5 +41,10 @@
  Popup message color
 */
 @property (nonatomic, strong) UIColor *messageLabelTextColor;
+
+/*
+ Background color
+ */
+@property (nonatomic, strong) UIColor *popupColor;
 
 @end
